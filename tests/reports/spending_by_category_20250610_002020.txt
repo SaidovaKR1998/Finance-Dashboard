@@ -1,0 +1,3 @@
+Empty DataFrame
+Columns: [Дата операции, Категория, Сумма операции]
+Index: []
