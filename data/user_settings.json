@@ -1,0 +1,6 @@
+Это файл настроек для функции *load_user_settings()* Если он не найден, используются настройки по умолчанию
+
+{
+  "user_currencies": ["USD", "EUR", "GBP"],
+  "user_stocks": ["AAPL", "TSLA", "NVDA"]
+}
