@@ -1,0 +1,35 @@
+[project]
+name = "python-project1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Saidova", email = "saidova.kseniya@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+exclude = '''
+^\.git/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 119
+known_first_party = ["python_project1"]  # замените на имя вашего пакета
+
+[tool.mypy]
+disallow_untyped_defs = true
+warn_return_any = true
+exclude = '''
+^venv/
+'''
